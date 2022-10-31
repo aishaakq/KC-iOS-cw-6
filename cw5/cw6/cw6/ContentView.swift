@@ -47,7 +47,7 @@ struct ContentView: View {
     }
     
     func BMICalculator(height: Double, weight: Double){
-        var total = weight / height * height
+        var total = weight / (height * height)
         
         if total <= 20{
             status = "thin"
